@@ -84,6 +84,9 @@
         }
       </div>
       }
+      <p class="text-white mt-3">
+        Time : {{ item.createdAt | date : "shortTime" }}
+      </p>
       <button
         class="px-4 py-2 bg-red-600 rounded-2xl my-5"
         (click)="delete(item.id, $index)"

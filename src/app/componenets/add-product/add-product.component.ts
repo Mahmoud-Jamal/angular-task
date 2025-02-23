@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+import { CommonModule, DatePipe } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import {
   FormArray,
@@ -11,7 +11,7 @@ import { Card } from '../../models/home';
 import { HomeService } from '../../services/home.service';
 @Component({
   selector: 'app-add-product',
-  imports: [CommonModule, ReactiveFormsModule, FormsModule],
+  imports: [CommonModule, ReactiveFormsModule, FormsModule, DatePipe],
   templateUrl: './add-product.component.html',
   styleUrl: './add-product.component.css',
 })
